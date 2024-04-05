@@ -11,10 +11,7 @@ class Ninja {
     }
 
     showStats() {
-        console.log(`Nombre: ${this.nombre}`);
-        console.log(`Fuerza: ${this.fuerza}`);
-        console.log(`Velocidad: ${this.velocidad}`);
-        console.log(`Salud: ${this.salud}`);
+        console.log(`Nombre: ${this.nombre} | Fuerza: ${this.fuerza} | Velocidad: ${this.velocidad} | Salud: ${this.salud}`);
     }
 
     drinkSake() {
@@ -28,3 +25,20 @@ ninja1.sayName();
 ninja1.showStats();
 ninja1.drinkSake();
 
+
+// Core: Super Ninja
+class Sensei extends Ninja {
+    constructor(nombre, salud = 200, velocidad = 10, fuerza = 10, sabiduria = 10) {
+        super(nombre, salud, velocidad, fuerza);
+        this.sabiduria = sabiduria;
+    }
+
+    speakWisdom() {
+        super.drinkSake();
+        console.log(`${this.nombre} dice: Lo que un programador puede hacer en un mes, dos programadores pueden hacerlo en dos meses.`);
+    }
+}
+
+const superSensei = new Sensei("Master Splinter");
+superSensei.speakWisdom();
+superSensei.showStats();
