@@ -1,0 +1,10 @@
+.title {
+    text-align: center;
+}
+
+.content {
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
