@@ -1,0 +1,50 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+h1 {
+  font-size: 30px;
+}
+
+.row {
+  margin: 0px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+.col {
+  margin: 0px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+
+button {
+  padding: 10px;
+  width: 200px;
+  border: none;
+}
+button:hover {
+  background-color: rgb(201, 201, 201);
+}
+
+#resourceSelect {
+  background-color: #253858;
+  color: #ffffff;
+  width: 200px;
+  height: 43px;
+}
+option {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#obi-wan {
+  width: 600px;
+}
